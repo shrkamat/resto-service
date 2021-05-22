@@ -1,0 +1,28 @@
+{
+  "Restaurant": [
+    {
+      "name": "Hariprasad"
+    }
+  ],
+  "Classification": [
+    {
+      "name": "Soup",
+      "MenuItems": [
+        {
+          "name": "Veg Manchow",
+          "img": "https://s9c2c8i7.rocketcdn.me/wp-content/uploads/2020/06/veg-manchow-soup.jpg",
+          "price": 90,
+          "is_veg": true
+        }
+      ]
+    },
+    {
+      "name": "Steak",
+      "MenuItems": []
+    },
+    {
+      "name": "Desserts",
+      "MenuItems": []
+    }
+  ]
+}

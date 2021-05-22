@@ -1,0 +1,3 @@
+#!/bin/bash
+
+vim -c "$" -c "r ! date" ./docs/dev-journal.txt

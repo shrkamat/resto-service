@@ -1,0 +1,34 @@
+DEV JOURNAL
+===========
+HASURA - https://cloud.hasura.io/project/6c269401-2cc9-40a0-8b3a-7f550ed32abd/console
+
+
+Sun May 23 00:21:35 IST 2021
+============================
+query AppPage {
+  Restaurant(where: {id: {_eq: 1}}){
+    name
+  }
+  Classification(where: {name: {_in: ["Steak", "Soup", "Desserts"]}}) {
+    name
+    MenuItems(where: {restaurant_id: {_eq: 1}}) {
+      name
+      img
+      price
+      is_veg
+    }
+  }
+}
+
+
+TODO: Create arguments for query
+TODO: How can we update classification.name as filed in parent ?
+TODO: How can we make this as array field
+TODO: How to version control GQL API(s) and DB fields
+
+I don't think we can live with current hasura solution, many reasons.
+1. Tagging menu item is a must. Without this we cannot display promotional items.
+2. Without being able to version control HASURA configs, solution is a no go.
+
+TODO: There is something called prisma, it could be interesting to check that out.
+
